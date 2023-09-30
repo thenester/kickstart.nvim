@@ -236,6 +236,13 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- Always show line numbers
+vim.o.number = true
+
+-- Center cursor while scrolling
+vim.o.scrolloff = vim.o.lines / 2
+
+
 -- Set highlight on search
 vim.o.hlsearch = false
 

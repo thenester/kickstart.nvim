@@ -252,6 +252,8 @@ vim.o.number = true
 -- Center cursor while scrolling
 vim.o.scrolloff = vim.o.lines / 2
 
+-- Highlight current line
+vim.o.cursorline = true
 
 -- Set highlight on search
 vim.o.hlsearch = false

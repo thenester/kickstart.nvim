@@ -225,6 +225,7 @@ require('lazy').setup({
   require 'plugins.autopairs',
   require 'plugins.lazygit',
   require 'plugins.nvim-tree',
+  require 'plugins.blame_line'
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping

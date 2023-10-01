@@ -153,15 +153,6 @@ require('lazy').setup({
   },
 
   {
-    -- Theme
-    'savq/melange-nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'melange'
-    end,
-  },
-
-  {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
@@ -229,6 +220,7 @@ require('lazy').setup({
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
   -- require 'kickstart.plugins.debug',
+  require 'plugins.theme',
   require 'plugins.autoformat',
   require 'plugins.autopairs',
   require 'plugins.lazygit',

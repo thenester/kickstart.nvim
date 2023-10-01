@@ -387,6 +387,9 @@ vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by 
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
 
+-- NvimTree
+vim.keymap.set('n', '<Tab><Tab>', '<Cmd>NvimTreeOpen<CR>', { desc = 'Open Nvim[T]ree' })
+
 -- Tabs management
 vim.keymap.set('n', '<Tab>1', '<Cmd>BufferGoto 1<CR>', { desc = '[T]ab goto 1st' })
 vim.keymap.set('n', '<Tab>2', '<Cmd>BufferGoto 2<CR>', { desc = '[T]ab goto 2st' })

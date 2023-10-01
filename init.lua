@@ -225,7 +225,8 @@ require('lazy').setup({
   require 'plugins.autopairs',
   require 'plugins.lazygit',
   require 'plugins.nvim-tree',
-  require 'plugins.blame_line'
+  require 'plugins.blame_line',
+  require 'plugins.barbar',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
@@ -385,6 +386,21 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+
+-- Tabs management
+vim.keymap.set('n', '<Tab>1', '<Cmd>BufferGoto 1<CR>', { desc = '[T]ab goto 1st' })
+vim.keymap.set('n', '<Tab>2', '<Cmd>BufferGoto 2<CR>', { desc = '[T]ab goto 2st' })
+vim.keymap.set('n', '<Tab>3', '<Cmd>BufferGoto 3<CR>', { desc = '[T]ab goto 3st' })
+vim.keymap.set('n', '<Tab>4', '<Cmd>BufferGoto 4<CR>', { desc = '[T]ab goto 4st' })
+vim.keymap.set('n', '<Tab>5', '<Cmd>BufferGoto 5<CR>', { desc = '[T]ab goto 5st' })
+vim.keymap.set('n', '<Tab>6', '<Cmd>BufferGoto 6<CR>', { desc = '[T]ab goto 6st' })
+vim.keymap.set('n', '<Tab>7', '<Cmd>BufferGoto 7<CR>', { desc = '[T]ab goto 7st' })
+
+vim.keymap.set('n', '<Tab>h', '<Cmd>BufferPrevious<CR>', { desc = '[T]ab previous' })
+vim.keymap.set('n', '<Tab>l', '<Cmd>BufferNext<CR>', { desc = '[T]ab next' })
+
+vim.keymap.set('n', '<Tab>d', '<Cmd>BufferClose<CR>', { desc = '[T]ab close' })
+vim.keymap.set('n', '<Tab>c', '<Cmd>tabnew<CR>', { desc = '[T]ab [C]reate' })
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`

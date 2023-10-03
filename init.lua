@@ -387,7 +387,7 @@ vim.keymap.set('n', '<Tab>h', '<Cmd>BufferPrevious<CR>', { desc = '[T]ab previou
 vim.keymap.set('n', '<Tab>l', '<Cmd>BufferNext<CR>', { desc = '[T]ab next' })
 
 vim.keymap.set('n', '<Tab>d', '<Cmd>BufferClose<CR>', { desc = '[T]ab close' })
-vim.keymap.set('n', '<Tab>c', '<Cmd>tabnew<CR>', { desc = '[T]ab [C]reate' })
+vim.keymap.set('n', '<Tab>n', '<Cmd>tabnew<CR>', { desc = '[T]ab [C]reate' })
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`

@@ -374,6 +374,9 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 -- NvimTree
 vim.keymap.set('n', '<Tab><Tab>', '<Cmd>NvimTreeOpen<CR>', { desc = 'Open Nvim[T]ree' })
 
+-- ToggleTerm
+vim.keymap.set('n', '<leader>t', '<Cmd>ToggleTerm<CR>', { desc = 'Open [T]erminal' })
+
 -- Tabs management
 vim.keymap.set('n', '<Tab>1', '<Cmd>BufferGoto 1<CR>', { desc = '[T]ab goto 1st' })
 vim.keymap.set('n', '<Tab>2', '<Cmd>BufferGoto 2<CR>', { desc = '[T]ab goto 2st' })

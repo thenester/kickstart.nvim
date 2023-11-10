@@ -227,7 +227,7 @@ require('lazy').setup({
 vim.o.number = true
 
 -- Center cursor while scrolling
-vim.o.scrolloff = vim.o.lines / 2
+vim.o.scrolloff = 20
 
 -- Highlight current line
 vim.o.cursorline = true
